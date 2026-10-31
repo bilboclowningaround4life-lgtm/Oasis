@@ -57,8 +57,8 @@ const main = async () => {
   stats.load(() => world.players().length);
   roles.load();
   panel.load();
-  await http.start();
-  await sfs.start(world);
+ const webServer = await http.start();
+await sfs.start(world, webServer);
   discordBot.startup();
   console.log(`[server] ready at ${config.baseUrl}`);
 };
