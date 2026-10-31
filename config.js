@@ -135,7 +135,7 @@ module.exports = {
   // booster badge left alone without the last two.
   discord: {
     clientId: env.AJ_DISCORD_CLIENT_ID || "",
-    clientSecret: env.AJ_DISCORD_CLIENT_SECRET || "",
+    clientSecret: env.OASIS_DISCORD_SECRET || "",
     botToken: env.AJ_DISCORD_BOT_TOKEN || "",
     guildId: env.AJ_DISCORD_GUILD_ID || "",
     // Optional Components V2 notification channels. Leave any empty to
