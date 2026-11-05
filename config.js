@@ -69,6 +69,7 @@ module.exports = {
   isPublic,
   publicUrl,
   trustedProxy,
+  trustCloudflare,
   problems,
   tls,
   // behind a trusted proxy the proxy encrypts the web port; the certificate is the game port's
