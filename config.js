@@ -33,6 +33,7 @@ const isPublic = Boolean(publicUrl) || !LOOPBACK_NAMES.includes(bindAddress) || 
 // X-Forwarded-For header it sets. without it every visitor behind a proxy
 // has the proxy's address, and the per-address limits see one address.
 const trustedProxy = env.AJ_TRUSTED_PROXY === "1";
+const trustCloudflare = env.AJ_TRUST_CLOUDFLARE === "1";
 // the game port can listen wider than the web port: a proxy (cloudflare, say)
 // carries web pages but not the game's own protocol
 const gameBindAddress = env.AJ_GAME_BIND || bindAddress;
